@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0141)file:///C:/Users/yashu/OneDrive/Desktop/project/Medilink%20DP/doctor.html?patient-name=yashashri&medication=dolo&dosage=2&instructions=hello# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Dashboard</title>
+    <link rel="stylesheet" href="doctor.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="search">
+            <!-- Search bar content -->
+        </div>
+        <div class="user">
+            <!-- User profile content -->
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="logind.html">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="profile-header">
+            <div class="doctor-profile">
+                <img src="doctor3.jpg" alt="Doctor Profile">
+                <div class="profile-details">
+                    <div class="doctor-name">Dr. Lakshmi Himani</div>
+                    <p>General Practitioner (GP) </p>
+                    <p>Experience: 10 years</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="details">
+            <!-- Appointments Section -->
+            <div class="cardHeader">
+                <h2>Appointments</h2>
+                <a href="file:///C:/Users/yashu/OneDrive/Desktop/project/Medilink%20DP/doctor.html?patient-name=yashashri&amp;medication=dolo&amp;dosage=2&amp;instructions=hello#" class="btn">Add Appointment</a>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Patient</td>
+                        <td>Date</td>
+                        <td>Time</td>
+                        <td>Problem</td>
+                        <td>Status</td>
+                        <td>Reports</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Harsha Sharma</td>
+                        <td>19-06-2024</td>
+                        <td>9:00am</td>
+                        <td>High Blood Pressure</td>
+                        <td><span class="status confirmed">Confirmed</span></td>
+                        <td><a href="reportsample.pdf">View Reports</a></td>
+                    </tr>
+                    <tr>
+                        <td>Avinash Chary</td>
+                        <td>19-06-2024</td>
+                        <td>10:30am</td>
+                        <td>Diabetes Checkup</td>
+                        <td><span class="status confirmed">Confirmed</span></td>
+                        <td><a href="reportsample2.pdf">View Reports</a></td>
+                    </tr>
+                    <tr>
+                        <td>Yogitha Sai</td>
+                        <td>19-06-2024</td>
+                        <td>11:15am</td>
+                        <td>Skin Rash</td>
+                        <td><span class="status confirmed">Confirmed</span></td>
+                        <td><a href="reportsample3.pdf">View Reports</a></td>
+                    </tr>
+                    <tr>
+                        <td>Yashashri Penikalapati</td>
+                        <td>19-06-2024</td>
+                        <td>2:15pm</td>
+                        <td>Regular Checkup</td>
+                        <td><span class="status confirmed">Confirmed</span></td>
+                        <td><a href="reportsample4.pdf">View Reports</a></td>
+                    </tr>
+                    <tr><td>Sushaanth Babu</td>
+                    <td>19-06-2024</td>
+                    <td>4:50pm</td>
+                    <td>Back Pain</td>
+                    <td><span class="status confirmed">Confirmed</span></td>
+                    <td><a href="reportsample5.pdf">View Reports</a></td>
+                </tr>
+                
+                    <!-- More rows -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Prescription Box Section -->
+        <div class="prescription-box">
+            <div class="cardHeader">
+                <h2>Add Prescription</h2>
+            </div>
+            <form class="prescription-form">
+                <div class="form-group">
+                    <label for="patient-name">Patient Name:</label>
+                    <input type="text" id="patient-name" name="patient-name" required="">
+                </div>
+                <div class="form-group">
+                    <label for="medication">Medication:</label>
+                    <input type="text" id="medication" name="medication" required="">
+                </div>
+                <div class="form-group">
+                    <label for="dosage">Dosage:</label>
+                    <input type="text" id="dosage" name="dosage" required="">
+                </div>
+                <div class="form-group">
+                    <label for="instructions">Instructions:</label>
+                    <textarea id="instructions" name="instructions" rows="4" required=""></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Add Prescription</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body></html>

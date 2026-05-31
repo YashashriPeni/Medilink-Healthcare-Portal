@@ -1,0 +1,317 @@
+/* hospital.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #39eaf7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.hospital-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.hospital-header p {
+    margin: 5px 0;
+}
+
+.menu {
+    background-color: #2874a6;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.overview, .departments, .doctors, .facilities, .appointment, .manage-appointments {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.overview h2, .departments h2, .doctors h2, .facilities h2, .appointment h2, .manage-appointments h2 {
+    margin-top: 0;
+    color: #2874a6;
+}
+
+.departments ul, .doctors ul, .facilities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.departments ul li, .doctors ul li, .facilities ul li {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #eef5fb;
+    border-radius: 4px;
+}
+
+.appointment form, .manage-appointments table {
+    width: 100%;
+}
+
+.appointment form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.appointment form label {
+    grid-column: 1 / span 2;
+    margin-top: 10px;
+}
+
+.appointment form input, .appointment form select, .appointment form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.appointment form button {
+    grid-column: 1 / span 2;
+    background-color: #39eaf7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appointment form button:hover {
+    background-color: #2874a6;
+}
+
+.manage-appointments table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.manage-appointments th, .manage-appointments td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.manage-appointments th {
+    background-color: #2874a6;
+    color: white;
+}
+
+.manage-appointments .edit-btn, .manage-appointments .delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.manage-appointments .edit-btn {
+    background-color: #39eaf7;
+    color: white;
+}
+
+.manage-appointments .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.manage-appointments .edit-btn:hover {
+    background-color: #2874a6;
+}
+
+.manage-appointments .delete-btn:hover {
+    background-color: #c0392b;
+}
+/* hospital.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #39eaf7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.hospital-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.hospital-header p {
+    margin: 5px 0;
+}
+
+.menu {
+    background-color: #2874a6;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #2874a6;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.overview, .departments, .doctors, .facilities, .appointment, .manage-appointments {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.overview h2, .departments h2, .doctors h2, .facilities h2, .appointment h2, .manage-appointments h2 {
+    margin-top: 0;
+    color: #2874a6;
+}
+
+.departments ul, .doctors ul, .facilities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.departments ul li, .doctors ul li, .facilities ul li {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #eef5fb;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.departments ul li:hover, .doctors ul li:hover, .facilities ul li:hover {
+    background-color: #dce8f4;
+}
+
+.appointment form, .manage-appointments table {
+    width: 100%;
+}
+
+.appointment form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.appointment form label {
+    grid-column: 1 / span 2;
+    margin-top: 10px;
+}
+
+.appointment form input, .appointment form select, .appointment form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.appointment form input:focus, .appointment form select:focus {
+    border-color: #39eaf7;
+}
+
+.appointment form button {
+    grid-column: 1 / span 2;
+    background-color: #39eaf7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appointment form button:hover {
+    background-color: #2874a6;
+}
+
+.manage-appointments table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.manage-appointments th, .manage-appointments td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.manage-appointments th {
+    background-color: #2874a

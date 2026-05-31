@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('health9.png'); /* Optional background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.case-container {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with 90% opacity */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.case-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.case-container p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent button background */
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: rgba(0, 86, 179, 0.9); /* Darker semi-transparent hover effect */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('health13.png'); /* Optional background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.case-container {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with 90% opacity */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.case-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.case-container p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent button background */
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: rgba(0, 86, 179, 0.9); /* Darker semi-transparent hover effect */
+}
+.contact-method a {
+    text-decoration: none;
+    display: inline-block; /* Ensures the anchor behaves like a block element if necessary */
+}
+
+.contact-method a button {
+    width: 100%; /* Ensures the button takes full width of the anchor */
+    display: block; /* Makes the button behave like a block element */
+}
+

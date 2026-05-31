@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MediLink: Centralized data base for health care</title>
+    <link rel="stylesheet" href="loginh.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">MediLink</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACTS</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" placeholder="Type To Search" id="searchInput">
+                <button class="btn" id="searchButton">Search</button>
+            </div>
+        
+
+        </div> 
+        <div class="content">
+            <h1><br><span>Welcome to MediLink</span> <br></h1>
+            <p class="par">Login here as Hospital Admin.<br>
+                <br>Oversee patient records, manage staff schedules, and coordinate care with healthcare providers.<br>Trust MediLink to optimize hospital operations and ensure quality care at every level.</p>
+
+                <button class="cn"><a href="joinus.html">JOIN US</a></button>
+
+                <div class="form">
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" name="" placeholder="Enter Password Here">
+                    <button class="btnn"><a href="hospital1.html">Login</a></button>
+                    <div class="forgot-password" style="text-align: center;">
+                        <a href="forgot.html">Forgot password?</a>
+                    </div>
+                    <p class="link" style="text-align: center;">
+                        Don't have an account<br>
+                        <div class="sign-up" style="text-align: center;">
+                            <a href="createaccount.html">Create Account</a>
+                        </div>
+                    </p> 
+                    <p class="liw">Log in with</p>
+                    
+                
+                    <div class="icons">
+                        <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://www.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <button id="google-login-button"><ion-icon name="logo-google"></ion-icon></button>
+                        <a href="https://www.skype.com"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+                    
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+      document.getElementById('google-login-button').addEventListener('click', function() {
+        // Replace the placeholders with your actual Google OAuth client ID and redirect URI
+        const clientId = 'YOUR_CLIENT_ID';
+        const redirectUri = 'YOUR_REDIRECT_URI';
+        const scope = 'email profile'; // Adjust scopes as necessary
+        const responseType = 'token'; // or 'code' depending on your OAuth flow
+
+        const googleOAuthURL = `https://accounts.google.com/o/oauth2/auth?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=${responseType}&scope=${scope}`;
+        window.location.href = googleOAuthURL;
+        document.getElementById('searchButton').addEventListener('click', function() {
+            const query = document.getElementById('searchInput').value.trim();
+            if (query) {
+                // Redirect to a search results page with the search query as a URL parameter
+                window.location.href = `/search?query=${encodeURIComponent(query)}`;
+            } else {
+                alert('Please enter a search term.');
+            }
+        });
+
+        // Optionally, allow pressing 'Enter' key to trigger the search
+        document.getElementById('searchInput').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                document.getElementById('searchButton').click();
+            }
+        });
+
+        
+      });
+    </script>
+</main>
+</body>
+</html>

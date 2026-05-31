@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="logo">
+            <h1>Medilink </h1>
+        </div>
+        <div class="navigation">
+            <a href="home.html">Home</a>
+            <a href="loginp.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Welcome,Advith!</h1>
+        </header>
+   
+    <main>
+        <section id="profile">
+            <h2>Your Profile</h2>
+            <p><strong>Name:</strong> Shiv Advith </p>
+            <p><strong>Age:</strong> 35</p>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Contact:</strong>shivadvith1@gmail.com</p>
+            <p><strong>Blood Group:</strong> B+</p>
+            <p><strong>BMI:</strong> 22.5</p>
+            <p><strong>Blood Pressure:</strong> 120/80 mmHg</p>
+            <p><strong>Fasting Blood Sugar (FBS):</strong> 90 mg/dL</p>
+            <p><strong>Postprandial Blood Sugar (PPBS):</strong> 120 mg/dL</p>
+        </section>
+        <section id="previous-reports">
+            <section id="previous-reports">
+                <h2>Your Previous Reports</h2>
+                <ul>
+                    <li>
+                        <strong>Report Title:</strong> Blood Test Results<br>
+                        <strong>Date Submitted:</strong> 2023-05-10<br>
+                        <strong>Status:</strong> Reviewed<br>
+                        <strong>Medication/Treatment:</strong> Iron Supplements<br>
+                        <strong>Daily Medication:</strong> Vitamin C, Iron Pills
+                    </li>
+                    <li>
+                        <strong>Report Title:</strong> MRI Scan<br>
+                        <strong>Date Submitted:</strong> 2023-06-15<br>
+                        <strong>Status:</strong> Reviewed<br>
+                        <strong>Medication/Treatment:</strong> Physical Therapy<br>
+                        <strong>Daily Medication:</strong> Pain Relievers, Muscle Relaxants
+                    </li>
+                    <li>
+                        <strong>Report Title:</strong> Annual Health Checkup<br>
+                        <strong>Date Submitted:</strong> 2024-01-20<br>
+                        <strong>Status:</strong> Pending<br>
+                        <strong>Medication/Treatment:</strong> Awaiting Recommendations<br>
+                        <strong>Daily Medication:</strong> Multivitamins
+                    </li>
+                </ul>
+            </section>
+            
+        </section>
+        <section id="upload-report">
+            <h2>Upload New Report</h2>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <label for="report-title">Report Title:</label>
+                <input type="text" id="report-title" name="report-title" required><br>
+                <label for="report-file">Choose File:</label>
+                <input type="file" id="report-file" name="report-file" required><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="book-appointment">
+            <h2>Book an Appointment</h2>
+            <form action="book_appointment.php" method="post" enctype="multipart/form-data">
+                <label for="hospital">Select Hospital:</label>
+                <select id="hospital" name="hospital" required>
+                    <option value="apollo-hospitals">Apollo Hospitals</option>
+                    <option value="care-hospitals">Care Hospitals</option>
+                    <option value="yashoda-hospitals">Yashoda Hospitals</option>
+                    <option value="continental-hospitals">Continental Hospitals</option>
+                    <option value="kims-hospitals">KIMS Hospitals</option>
+                    <option value="maxcure-hospitals">MaxCure Hospitals</option>
+                    <option value="rainbow-hospitals">Rainbow Hospitals</option>
+                    <option value="global-hospitals">Global Hospitals</option>
+                    <option value="aig-hospitals">AIG Hospitals</option>
+                    <option value="star-hospitals">Star Hospitals</option>
+                    <!-- Add more hospitals as needed -->
+                </select><br>
+                <label for="doctor">Select Doctor Specialty:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="general">General Practitioner</option>
+                    <option value="cardiologist">Cardiologist</option>
+                    <option value="dermatologist">Dermatologist</option>
+                    <option value="neurologist">Neurologist</option>
+                    <option value="orthopedic">Orthopedic Surgeon</option>
+                    <option value="pediatrician">Pediatrician</option>
+                    <option value="psychiatrist">Psychiatrist</option>
+                    <option value="radiologist">Radiologist</option>
+                    <option value="urologist">Urologist</option>
+                    <option value="gastroenterologist">Gastroenterologist</option>
+                    <option value="oncologist">Oncologist</option>
+                    <option value="gynecologist">Gynecologist</option>
+                    <option value="ophthalmologist">Ophthalmologist</option>
+                    <option value="ent">ENT Specialist</option>
+                    <option value="endocrinologist">Endocrinologist</option>
+                    <option value="rheumatologist">Rheumatologist</option>
+                    <option value="anesthesiologist">Anesthesiologist</option>
+                    <!-- Add more specialties as needed -->
+                </select><br>
+                <label for="appointment-date">Choose Date:</label>
+                <input type="date" id="appointment-date" name="appointment-date" required><br>
+                <label for="appointment-file">Upload Related File:</label>
+                <input type="file" id="appointment-file" name="appointment-file"><br>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+        <section id="appointment-details">
+            <h2>Upcoming Appointments</h2>
+            <ul>
+                <li>
+                    <strong>Hospital:</strong> Apollo Hospitals<br>
+                    <strong>Doctor:</strong> Dr. Radha Krishna<br>
+                    <strong>Date:</strong> 2024-06-21<br>
+                    <strong>Status:</strong> Confirmed
+                </li>
+                <li>
+                    <strong>Hospital:</strong> Care Hospitals<br>
+                    <strong>Doctor:</strong> Dr.Vasudev<br>
+                    <strong>Date:</strong> 2024-07-05<br>
+                    <strong>Status:</strong> Confirmed
+                </li>
+            </ul>
+        </section>
+        <section id="notifications">
+            <h2>Notifications</h2>
+            <ul>
+                <li>Your appointment with Dr.Vasudev is confirmed for 2024-06-21 at Apollo Hospitals.</li>
+                <li>Your Annual Health Checkup report is pending review.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Need Help? Contact us at medilink36586164@gmail.com</p>
+    </footer>
+</body>
+</html>

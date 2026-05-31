@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollo Hospital Dashboard</title>
+    <link rel="stylesheet" href="hospital.css">
+</head>
+<body>
+    <header>
+        <div class="hospital-header">
+            <h1>Apollo Hospital</h1>
+            <p>Address: Regimental Bazaar, Shivaji Nagar, Secunderabad, Telangana 500025</p>
+            <p>Contact: 040 2711 8888</p>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="hospital_list.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li><a href="contact.html">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <div id="overview" class="overview">
+                <h2>Overview</h2>
+                <p>Apollo Hospitals is a renowned healthcare provider known for its comprehensive medical services and state-of-the-art facilities. With a wide range of specialties including cardiology, oncology, and neurology, Apollo Hospitals combines advanced technology with compassionate care to cater to diverse patient needs. Their commitment to quality healthcare and patient-centric approach makes them a trusted choice for medical treatment and services globally.</p>
+            </div>
+            <div id="departments" class="departments">
+                <h2>Departments</h2>
+                <ul>
+                    <li>Cardiology</li>
+                    <li>Orthopedics</li>
+                    <li>Spine</li>
+                    <li>Dermatology</li>
+                    <!-- More departments -->
+                </ul>
+            </div>
+            <div id="doctors" class="doctors">
+                <h2>Doctors</h2>
+                <ul>
+                    <li>Dr. C. V. Rao - Cardiology</li>
+                    <li>Dr. P. Siva Kumar - Orthopedics</li>
+                    <li>Dr. K. Rama Krishna - Spine</li>
+                    <li>Dr. R. Srinivas - Dermatology</li>
+                    <!-- More doctors -->
+                </ul>
+            </div>
+            <div id="facilities" class="facilities">
+                <h2>Facilities</h2>
+                <ul>
+                    <li>Advanced Medical Equipment</li>
+                    <li>Specialty Centers</li>
+                    <li>Emergency and Trauma Care</li>
+                    <li>Surgical Services</li>
+                    <li>Diagnostic Services</li>
+                    <li>Rehabilitation Services</li>
+                    <li>Patient Accommodation</li>
+                    <li>Telemedicine Services</li>
+                    <li>Health Check-ups</li>
+                    <li>Pharmacy</li>
+                </ul>
+            </div>
+            <div id="appointment" class="appointment">
+                <h2>Book an Appointment</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                    <label for="department">Department:</label>
+                    <select id="department" name="department">
+                        <option value="">--select--</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <option value="spine">Spine</option>
+                        <option value="dermatology">Dermatology</option>
+                        <!-- More options -->
+                    </select>
+                    <button type="submit">Book</button>
+                </form>
+            </div>
+            <div id="manage-appointments" class="manage-appointments">
+                <h2>View and Manage Appointments</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Department</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Harish Sharma</td>
+                            <td>2024-06-21</td>
+                            <td>10:00 AM</td>
+                            <td>Cardiology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Sneha</td>
+                            <td>2024-06-21</td>
+                            <td>11:00 AM</td>
+                            <td>Cardiology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Rahul Gupta</td>
+                            <td>2024-06-22</td>
+                            <td>09:00 AM</td>
+                            <td>Orthopedics</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Meera Sharma</td>
+                            <td>2024-06-22</td>
+                            <td>02:00 PM</td>
+                            <td>Dermatology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Ankit Verma</td>
+                            <td>2024-06-23</td>
+                            <td>11:30 AM</td>
+                            <td>Spine</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Pooja Rao</td>
+                            <td>2024-06-23</td>
+                            <td>01:00 PM</td>
+                            <td>Cardiology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Vikram Singh</td>
+                            <td>2024-06-24</td>
+                            <td>10:15 AM</td>
+                            <td>Orthopedics</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Sara Ali</td>
+                            <td>2024-06-24</td>
+                            <td>12:30 PM</td>
+                            <td>Dermatology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Rohit Kumar</td>
+                            <td>2024-06-25</td>
+                            <td>08:45 AM</td>
+                            <td>Cardiology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Priya Joshi</td>
+                            <td>2024-06-25</td>
+                            <td>03:00 PM</td>
+                            <td>Spine</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <!-- More rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

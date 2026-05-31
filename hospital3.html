@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Name</title>
+    <link rel="stylesheet" href="hospital.css">
+</head>
+<body>
+    <header>
+        <div class="hospital-header">
+            <h1>Yashoda Hospitals</h1>
+            <p>Address: Somajiguda, Matha Nagar, Hyderabad, Telangana</p>
+            <p>Contact: 040 4567 4567</p>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="hospital_list.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li><a href="contact.html">CONTACTS</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="container">
+        <main>
+            <div id="overview" class="overview">
+                <h2>Overview</h2>
+                <p>Yashoda Hospitals are renowned for their advanced medical facilities and specialized care across diverse disciplines such as cardiology, oncology, and neurology. With a focus on patient-centric services, they provide state-of-the-art diagnostic technology, expert medical teams, and a commitment to compassionate healthcare delivery. Yashoda Hospitals are recognized for their comprehensive healthcare solutions and dedication to patient well-being.</p>
+            </div>
+            <div id="departments" class="departments">
+                <h2>Departments</h2>
+                <ul>
+                    <li>Gynaecology</li>
+                    <li>Endocrinology</li>
+                    <li>Ent</li>
+                    <li>Pulmonology</li>
+                    <li>Spine</li>
+                    <!-- More departments -->
+                </ul>
+            </div>
+            <div id="doctors" class="doctors">
+                <h2>Doctors</h2>
+                <ul>
+                    <li>Dr. Anitha Kunnaiah - Gynaecology</li>
+                    <li>Dr. Arun Mukka - Endocrinology</li>
+                    <li>Dr. KVSSRK Sastry - Ent</li>
+                    <li>Dr. D Ragotham Reddy - Pulmonology</li>
+                    <li>Dr. M Madhu Reddy - Spine</li>
+                    <!-- More doctors -->
+                </ul>
+            </div>
+            <div id="facilities" class="facilities">
+                <h2>Facilities</h2>
+                <p>
+                    Maternity and Pediatric Care: Dedicated maternity wards and pediatric departments equipped with neonatal intensive care units (NICU) and pediatric intensive care units (PICU).<p></p>
+
+                    <p>Cancer Care Services: Comprehensive oncology services including chemotherapy, radiation therapy, and surgical oncology.<p>
+
+                        <p>Transplant Services: Organ transplant programs such as kidney, liver, and bone marrow transplants with specialized transplant units.<p>
+
+                            <p>Advanced Imaging Services: High-resolution imaging modalities like PET-CT scan and digital mammography for accurate diagnostics.<p>
+
+                                <p>Pain Management Clinics: Specialized pain management clinics offering advanced treatments for chronic pain conditions.<p>
+
+                                    <p>Wellness and Preventive Health: Health promotion and disease prevention programs including health check-ups and wellness screenings.<p>
+
+                                        <p>International Patient Services: Dedicated services for international patients including language interpreters, visa assistance, and accommodation arrangements.<p>
+
+                                            <p>Nutritional Counseling: Dietetics and nutrition services tailored to individual patient needs and medical conditions.<p>
+
+                                                <p>Research and Innovation: Active involvement in medical research, clinical trials, and healthcare innovation to advance treatment options and patient care.<p>
+
+                                                    <p>Patient Education: Educational programs and resources for patients and their families to understand medical conditions, treatment options, and self-care practices.<p>
+            </div>
+            <div id="appointment" class="appointment">
+                <h2>Book an Appointment</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                    <label for="department">Department:</label>
+                    <select id="department" name="department">
+                        <option value="select">--select--</option>
+                        <option value="cardiology">Gynaecology</option>
+                        <option value="neurology">Endocrinology</option>
+                        <option value="nephrology">Ent</option>
+                        <option value="diabetology">Pulmonology</option>
+                        <option value="spine">Spine</option>
+                        <!-- More options -->
+                    </select>
+                    <button type="submit">Book</button>
+                </form>
+            </div>
+            <div id="manage-appointments" class="manage-appointments">
+                <h2>View and Manage Appointments</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Department</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Harish Sharma</td>
+                            <td>2024-06-21</td>
+                            <td>10:00 AM</td>
+                            <td>Cardiology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Sneha</td>
+                            <td>2024-06-21</td>
+                            <td>11:00 AM</td>
+                            <td>Cardiology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Rahul Gupta</td>
+                            <td>2024-06-22</td>
+                            <td>09:00 AM</td>
+                            <td>Orthopedics</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Meera Sharma</td>
+                            <td>2024-06-22</td>
+                            <td>02:00 PM</td>
+                            <td>Dermatology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Ankit Verma</td>
+                            <td>2024-06-23</td>
+                            <td>11:30 AM</td>
+                            <td>Spine</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Pooja Rao</td>
+                            <td>2024-06-23</td>
+                            <td>01:00 PM</td>
+                            <td>Cardiology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Vikram Singh</td>
+                            <td>2024-06-24</td>
+                            <td>10:15 AM</td>
+                            <td>Orthopedics</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Sara Ali</td>
+                            <td>2024-06-24</td>
+                            <td>12:30 PM</td>
+                            <td>Dermatology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Rohit Kumar</td>
+                            <td>2024-06-25</td>
+                            <td>08:45 AM</td>
+                            <td>Cardiology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Priya Joshi</td>
+                            <td>2024-06-25</td>
+                            <td>03:00 PM</td>
+                            <td>Spine</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Shivani Patel</td>
+                            <td>2024-06-26</td>
+                            <td>09:30 AM</td>
+                            <td>Gynaecology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Amit Kumar</td>
+                            <td>2024-06-26</td>
+                            <td>11:00 AM</td>
+                            <td>Endocrinology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Neha Sharma</td>
+                            <td>2024-06-27</td>
+                            <td>10:30 AM</td>
+                            <td>ENT</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Rajesh Malhotra</td>
+                            <td>2024-06-27</td>
+                            <td>01:15 PM</td>
+                            <td>Pulmonology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <!-- Additional rows can be added here -->
+                    </tbody>
+                </table>
+            </div>
+            
+        </main>
+    </div>
+</body>
+</html>

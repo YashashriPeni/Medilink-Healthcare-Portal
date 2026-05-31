@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Name</title>
+    <link rel="stylesheet" href="hospital.css">
+</head>
+<body>
+    <header>
+        <div class="hospital-header">
+            <h1>Care Hospitals</h1>
+            <p>Address: 123 Health Blvd, Mediville, Wellness State 12345</p>
+            <p>Contact: 123-456-7890</p>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="hospital_list.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li><a href="contact.html">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <div id="overview" class="overview">
+                <h2>Overview</h2>
+                <p>Care Hospitals is a premier healthcare institution founded in 1998 with the mission to provide high-quality medical services to the community. Our state-of-the-art facilities and dedicated staff ensure the best possible care for our patients.</p>
+            </div>
+            <div id="departments" class="departments">
+                <h2>Departments</h2>
+                <ul>
+                    <li>Oncology</li>
+                    <li>Orthopedics</li>
+                    <li>Gastroenterology</li>
+                    <li>Pediatrics</li>
+                    <!-- More departments -->
+                </ul>
+            </div>
+            <div id="doctors" class="doctors">
+                <h2>Doctors</h2>
+                <ul>
+                    <li>Dr. John Smith - Oncology</li>
+                    <li>Dr. Emily Brown - Orthopedics</li>
+                    <li>Dr. Michael Johnson - Gastroenterology</li>
+                    <li>Dr. Sarah Davis - Pediatrics</li>
+                    <!-- More doctors -->
+                </ul>
+            </div>
+            <div id="facilities" class="facilities">
+                <h2>Facilities</h2>
+                <p>
+                    Specialized Medical Care: Cutting-edge facilities in specialties such as oncology, orthopedics, and pediatrics.</p>
+                </p>Emergency Services: Fully equipped emergency rooms and trauma care for immediate medical needs.</p>
+                </p>Diagnostic Capabilities: Advanced diagnostic services including MRI, CT scan, and laboratory facilities.</p>
+                </p>Surgical Expertise: Modern operating theaters with the latest surgical technology and minimally invasive options.</p>
+                </p>Rehabilitation Programs: Comprehensive rehabilitation services for post-operative and therapeutic care.</p>
+                </p>Patient-Centric Amenities: Comfortable inpatient accommodations and a patient-focused care environment.</p>
+                </p>Telemedicine Access: Remote consultations to enhance accessibility to our healthcare services.</p>
+            </div>
+            <div id="appointment" class="appointment">
+                <h2>Book an Appointment</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                    <label for="department">Department:</label>
+                    <select id="department" name="department">
+                        <option value="select">--select--</option>
+                        <option value="oncology">Oncology</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <option value="gastroenterology">Gastroenterology</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <!-- More options -->
+                    </select>
+                    <button type="submit">Book</button>
+                </form>
+            </div>
+            <div id="manage-appointments" class="manage-appointments">
+                <h2>View and Manage Appointments</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Department</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alex Morgan</td>
+                            <td>2024-07-01</td>
+                            <td>10:00 AM</td>
+                            <td>Oncology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Jessica Lee</td>
+                            <td>2024-07-01</td>
+                            <td>11:00 AM</td>
+                            <td>Orthopedics</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Brian Taylor</td>
+                            <td>2024-07-02</td>
+                            <td>09:00 AM</td>
+                            <td>Gastroenterology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Olivia Wilson</td>
+                            <td>2024-07-02</td>
+                            <td>02:00 PM</td>
+                            <td>Pediatrics</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>James Brown</td>
+                            <td>2024-07-03</td>
+                            <td>11:30 AM</td>
+                            <td>Oncology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Mary White</td>
+                            <td>2024-07-03</td>
+                            <td>01:00 PM</td>
+                            <td>Orthopedics</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>David Clark</td>
+                            <td>2024-07-04</td>
+                            <td>10:15 AM</td>
+                            <td>Gastroenterology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Susan Lewis</td>
+                            <td>2024-07-04</td>
+                            <td>12:30 PM</td>
+                            <td>Pediatrics</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Daniel Walker</td>
+                            <td>2024-07-05</td>
+                            <td>08:45 AM</td>
+                            <td>Oncology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Patricia Hall</td>
+                            <td>2024-07-05</td>
+                            <td>03:00 PM</td>
+                            <td>Orthopedics</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <!-- Additional rows can be added here -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+```

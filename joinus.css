@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('health10.png'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(57, 234, 247, 0.8);
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo a {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #000;
+    background-color: #39eaf7;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.container:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    color: #39eaf7;
+    margin-bottom: 20px;
+}
+
+.intro, .openings, .application-form, .contact-info {
+    margin-bottom: 40px;
+}
+
+.application-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.application-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.application-form input[type="text"],
+.application-form input[type="email"],
+.application-form input[type="file"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    max-width: 400px;
+}
+
+.application-form button {
+    padding: 10px;
+    background-color: #39eaf7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.application-form button:hover {
+    background-color: #2da3b5;
+}
+
+.contact-info a {
+    color: #39eaf7;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="setting.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Settings</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#privacy">Privacy</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="dashboard.html">Home</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="profile">
+                <h2>Profile Settings</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                    <button type="submit">Save Changes</button>
+                </form>
+            </section>
+
+            <section id="notifications">
+                <h2>Notification Settings</h2>
+                <div class="notification-option">
+                    <input type="checkbox" id="emailNotifications" name="emailNotifications">
+                    <label for="emailNotifications">Email Notifications</label>
+                </div>
+                <div class="notification-option">
+                    <input type="checkbox" id="pushNotifications" name="pushNotifications">
+                    <label for="pushNotifications">Push Notifications</label>
+                </div>
+            </section>
+
+            <section id="privacy">
+                <h2>Privacy Settings</h2>
+                <div class="privacy-option">
+                    <input type="checkbox" id="hideProfile" name="hideProfile">
+                    <label for="hideProfile">Hide Profile</label>
+                </div>
+            </section>
+
+            <section id="security">
+                <h2>Security Settings</h2>
+                <form id="securityForm">
+                    <div class="security-option">
+                        <label for="changePassword">Change Password:</label>
+                        <input type="password" id="changePassword" name="changePassword" placeholder="Enter new password">
+                    </div>
+                    <button type="button" id="changePasswordButton">Change Password</button>
+                </form>
+            </section>
+            
+        </main>
+    </div>
+    <script src="setting.js"></script>
+    
+</body>
+
+</html>

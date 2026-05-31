@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continental Hospital</title>
+    <link rel="stylesheet" href="hospital.css">
+</head>
+<body>
+    <header>
+        <div class="hospital-header">
+            <h1>Continental Hospital</h1>
+            <p>Address: Plot No 3, Road No. 2, Financial District, Gachibowli, Nanakramguda, Telangana 500032</p>
+            <p>Contact: 040 6700 0000</p>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="hospital_list.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <div id="overview" class="overview">
+                <h2>Overview</h2>
+                <p>Continental Hospital is dedicated to providing exceptional healthcare services with a focus on patient well-being and advanced medical treatments. Our hospital is equipped with state-of-the-art facilities and staffed by experienced medical professionals committed to delivering compassionate care.</p>
+            </div>
+            <div id="departments" class="departments">
+                <h2>Departments</h2>
+                <ul>
+                    <li>Gynaecology</li>
+                    <li>Endocrinology</li>
+                    <li>ENT</li>
+                    <li>Pulmonology</li>
+                    <li>Neurology</li>
+                    <!-- Additional departments can be added here -->
+                </ul>
+            </div>
+            <div id="doctors" class="doctors">
+                <h2>Doctors</h2>
+                <ul>
+                    <li>Dr. Aisha Khan - Gynaecology</li>
+                    <li>Dr. Rahul Singh - Endocrinology</li>
+                    <li>Dr. Priya Patel - ENT</li>
+                    <li>Dr. Amit Sharma - Pulmonology</li>
+                    <li>Dr. Vikas Verma - Neurology</li>
+                    <!-- Additional doctors can be added here -->
+                </ul>
+            </div>
+            <div id="facilities" class="facilities">
+                <h2>Facilities</h2>
+                <p>
+                    Maternity and Pediatric Care: Dedicated wards with advanced facilities for maternal care and pediatric treatment.<br>
+                    Cancer Care Services: Comprehensive oncology treatments including chemotherapy, radiation therapy, and surgical interventions.<br>
+                    Transplant Services: Specialized units for organ transplants such as kidney and liver transplants.<br>
+                    Advanced Imaging: Cutting-edge imaging technologies including MRI, CT scan, and digital radiography.<br>
+                    Cardiac Care: State-of-the-art cardiac units for diagnosis and treatment of heart diseases.<br>
+                    Surgical Services: Advanced surgical suites equipped for complex surgeries across various specialties.<br>
+                    Rehabilitation: Comprehensive rehabilitation services for post-operative and chronic condition recovery.<br>
+                    Emergency Care: 24/7 emergency services with specialized trauma care and critical care units.<br>
+                    Patient Support: Dedicated patient support services including counseling and rehabilitation programs.<br>
+                    Medical Research: Active participation in medical research and clinical trials to advance healthcare.<br>
+                </p>
+            </div>
+            <div id="appointment" class="appointment">
+                <h2>Book an Appointment</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                    <label for="department">Department:</label>
+                    <select id="department" name="department">
+                        <option value="select">--select--</option>
+                        <option value="gynaecology">Gynaecology</option>
+                        <option value="endocrinology">Endocrinology</option>
+                        <option value="ent">ENT</option>
+                        <option value="pulmonology">Pulmonology</option>
+                        <option value="neurology">Neurology</option>
+                        <!-- Additional departments can be added here -->
+                    </select>
+                    <button type="submit">Book</button>
+                </form>
+            </div>
+            <div id="manage-appointments" class="manage-appointments">
+                <h2>View and Manage Appointments</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Department</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ravi Kumar</td>
+                            <td>2024-07-01</td>
+                            <td>10:00 AM</td>
+                            <td>Cardiology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Sunita Rao</td>
+                            <td>2024-07-01</td>
+                            <td>11:00 AM</td>
+                            <td>Cardiology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Mohit Sharma</td>
+                            <td>2024-07-02</td>
+                            <td>09:00 AM</td>
+                            <td>Orthopedics</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Rina Mehta</td>
+                            <td>2024-07-02</td>
+                            <td>02:00 PM</td>
+                            <td>Dermatology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Ajay Verma</td>
+                            <td>2024-07-03</td>
+                            <td>11:30 AM</td>
+                            <td>Spine</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Pooja Nair</td>
+                            <td>2024-07-03</td>
+                            <td>01:00 PM</td>
+                            <td>Cardiology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Anil Singh</td>
+                            <td>2024-07-04</td>
+                            <td>10:15 AM</td>
+                            <td>Orthopedics</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Sara Joseph</td>
+                            <td>2024-07-04</td>
+                            <td>12:30 PM</td>
+                            <td>Dermatology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Rohit Kapoor</td>
+                            <td>2024-07-05</td>
+                            <td>08:45 AM</td>
+                            <td>Cardiology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Priya Malhotra</td>
+                            <td>2024-07-05</td>
+                            <td>03:00 PM</td>
+                            <td>Spine</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Shivani Dubey</td>
+                            <td>2024-07-06</td>
+                            <td>09:30 AM</td>
+                            <td>Gynaecology</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Amit Tiwari</td>
+                            <td>2024-07-06</td>
+                            <td>11:00 AM</td>
+                            <td>Endocrinology
+
+</td>
+                            <td><button class="edit-btn">Edit</button> <button class="delete-btn">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+```

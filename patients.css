@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('health9.png');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust transparency */
+}
+
+header {
+    background-color: transparent; /* Set header background transparent */
+    color: #39eaf7;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: transparent; /* Set navigation background transparent */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; /* Set navigation text color to white */
+}
+
+main {
+    padding: 20px;
+}
+
+.records {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.record-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust transparency */
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.record-card h3 {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #39eaf7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #39eaf7;
+}

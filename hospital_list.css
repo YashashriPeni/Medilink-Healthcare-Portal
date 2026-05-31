@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('health10.png') no-repeat center center fixed;
+    background-size: cover
+    
+    
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #39eaf7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    
+}
+
+header .logo {
+    font-size: 1.8em;
+    text-align: left;
+    flex-grow: 1;
+}
+
+
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #39eaf7;
+}
+
+.logo span {
+    color: #39eaf7;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #39eaf7;
+    font-weight: bold;
+    transition: color 0.3s; /* Transition for color change */
+}
+
+.menu ul li a:hover {
+    color: #000; /* Change color to black on hover */
+}
+
+
+.header-right a {
+    color: #39eaf7;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header-right .signup {
+    background-color: #39eaf7;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.header-right a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+main {
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+
+
+
+.hospital-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.hospital-card {
+    background-color: rgba(24, 23, 23, 0.8);
+    border: 1px solid rgba(24, 23, 23, 0.8);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.hospital-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.hospital-card .btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.statistics {
+    margin: 20px;
+    background-color: rgba(24, 23, 23, 0.8);
+    padding: 20px;
+    border: 1px solid rgba(15, 15, 15, 0.8);
+}
+
+.hospital-header {
+    background-color: #0a0a0a;
+    padding: 20px;
+    text-align: center;
+}
+
+.hospital-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.hospital-header p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.overview, .departments, .doctors, .facilities, .appointment, .reviews {
+    margin-bottom: 20px;
+}
+
+.overview h2, .departments h2, .doctors h2, .facilities h2, .appointment h2, .reviews h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.departments ul, .doctors ul {
+    list-style: none;
+    padding: 0;
+}
+
+.departments ul li, .doctors ul li {
+    margin: 5px 0;
+}
+
+.appointment form {
+    display: flex;
+    flex-direction: column;
+}
+
+.appointment form label {
+    margin: 10px 0 5px;
+}
+
+.appointment form input, .appointment form select, .appointment form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+/* Existing CSS here */
+
+.statistics {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.statistics h3 {
+    width: 100%;
+    border-bottom: 2px solid #39eaf7;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.stat-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.stat-number {
+    font-size: 2em;
+    color: #39eaf7;
+    margin: 0;
+}
+
+.stat-label {
+    font-size: 1em;
+    color: #333;
+    margin: 0;
+}
