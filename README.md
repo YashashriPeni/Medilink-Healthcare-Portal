@@ -27,7 +27,7 @@ MediLink is a web-based healthcare management system designed to connect patient
 
 ### Home Page
 
-![Home Page](screenshots/Homepage.png)
+![Home Page](screenshots/Hompage.png)
 
 ### Patient Dashboard
 
