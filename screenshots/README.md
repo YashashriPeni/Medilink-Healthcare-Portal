@@ -5,7 +5,7 @@ Healthcare management platform for patients, doctors and hospitals with centrali
 ## Screenshots
 
 ### Home Page
-![Home Page](screenshots/Hompage.png)
+![Home Page](Hompage.png)
 
 ### Patient Dashboard
 ![Patient Dashboard](screenshots/Patient Dashboard.png)
